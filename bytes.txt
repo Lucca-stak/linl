@@ -1,1 +1,1 @@
-cd C:\\ProgramData\\TEMP
+cd C:\ProgramData\TEMP
